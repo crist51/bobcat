@@ -1,0 +1,96 @@
+:root {
+    --main-bg-principal: black;
+    --main-bg-secondaire: red;
+    --main-bg-white: #f2f2f2;
+    
+    /* --main-bg-principal: #243162; */
+    /* --main-bg-secondaire: #e2aa1b; */
+  }
+
+
+
+.backgroundPrimary {
+    color: var(--main-bg-white);
+    background-color:  var(--main-bg-principal);
+}
+
+.backgroundSecondary {
+    background-color: var(--main-bg-secondaire);
+}
+
+.Header_top ::selection, nav ::selection, .header_bottom ::selection {
+    background-color: var(--main-bg-secondaire);
+
+}
+
+.Header_top::selection{
+    background: var(--main-bg-white) !important;
+    color: var(--main-bg-secondaire)!important;
+}
+
+.header_nav nav li:hover::after{
+    background-color: var(--main-bg-secondaire);
+}
+
+.header_nav nav li::after, .devis .total{
+    background: var(--main-bg-white);
+}
+
+.header_nav nav a:hover,.header_nav nav a:hover i, .header_nav nav a:focus,.header_nav nav a:focus i {
+    transition: color 0.3s;
+    color: var(--main-bg-secondaire)
+}
+
+.header_nav nav i, nav a{
+    transition: color 0.3s;
+    color: var(--main-bg-white);
+}
+
+.image_1, .bureau, .image_2, .plan img{
+    border: 2mm ridge var(--main-bg-secondaire);
+}
+
+.section-subtitle {
+    color: var(--main-bg-secondaire);
+}
+
+.hero-push-link {
+    border: 2px solid var(--main-bg-secondaire);
+    background: var(--main-bg-principal);
+}
+
+.listProduit article h3 {
+    color: transparent;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+.listProduit article:hover h3 {
+    color: var(--main-bg-white);
+    background: rgba(0, 0, 0, 0.750);
+    border: 2px solid var(--main-bg-white);
+    transition: background-color 0.5s;
+}
+
+.produit .bloc-1 ul, .produit .bloc-1 h3, .bloc-1 label, .bloc-1 p, .devis .total {
+    color: var(--main-bg-principal);
+}
+
+.devis article {
+   border: 2px var(--main-bg-white) solid;
+}
+
+.section-container{
+    transition: background-color 0.3s ease-out;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.image_1:hover .section-container, .image_2:hover .section-container{
+    transition: background-color 0.3s ease-out;
+    background-color:rgba(0, 0, 0, 0.800);
+}
+
+.section-container ::selection{
+    background-color: var(--main-bg-secondaire);
+    color: var(--main-bg-white);
+}

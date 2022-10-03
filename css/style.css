@@ -1,0 +1,281 @@
+body, header, main, footer, p, h1, h2, h3, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+p, li, a {
+    font-size: medium;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+.none{
+    display: none;
+}
+
+/*--------------*/
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    /*prend en compte les bordure et les pading dans les largeur*/
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    font-family: sans-serif;
+}
+
+
+.main {
+    padding-left: clamp(25px, 8vw, 130px) !important;
+    padding-right: clamp(25px, 8vw, 130px) !important;
+}
+
+.bloc_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+/* ------------------------------------------------------------------------- listProduit -------------------------------------------------------------------------  */
+.listProduit h2, .produit h2, .devis h2 {
+    margin: 25px 0;
+}
+
+.listProduit article {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.listProduit article img, .listProduit article, .listProduit article h3 {
+    border-radius: 33px;
+}
+
+.listProduit article img, .listProduit article{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.listProduit article h3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: baseline;
+}
+
+@media screen and (min-width: 375px) {
+    .listProduit article img, .listProduit article {
+        width: 250px;
+    }
+}
+
+/* ------------------------------------------------------------------------- produit -------------------------------------------------------------------------  */
+
+.produit section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.produit .bloc-1 {
+    border-radius: 33px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.produit .bloc-1 h3 {
+    text-align: center;
+    margin: 5px 0;
+    padding: 0 15px;
+}
+
+.produit .bloc-1 img {
+    width: 100%;
+}
+
+.produit .bloc-1 ul, .produit .bloc-1 form, .produit .bloc-1 .containerPrice {
+    padding: 15px;
+}
+
+.produit .bloc-1 .form_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc-1 input {
+    width: 50px;
+    margin-left: 10px;
+}
+
+
+
+#btn{
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+form>div{
+    margin-bottom: 25px;
+}
+
+.form_div label{
+    text-decoration:underline
+}
+
+
+@media screen and (min-width: 500px) {
+    .produit .bloc-1 {
+        width: 500px;
+    }
+
+    .containerPrice p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .form div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form input {
+        margin-top: 15px;
+    }
+    .bloc-1 .containerPrice span {
+        display: block;
+    }
+
+}
+
+/* ------------------------------------------------------------------------- devis -------------------------------------------------------------------------  */
+
+.devis .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.devis .bloc_1{
+    flex-direction: column;
+}
+.devis .total{
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+.devis .total h2{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+
+
+
+.devis{
+    flex-direction: column;
+}
+
+.devis h2{
+    text-align: center;
+}
+
+.cart__item, .devis section{
+    width: 100%;
+    max-width: 500px;
+}
+
+.devis article img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.devis article {
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.devis .cart__item__content{
+    padding: 10px;
+}
+
+.cart__item__content{
+    width: 100%;
+}
+
+.item_info div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.devis .deleteItem{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.priceTotal, .totalEntretient{
+    font-weight: bolder;
+}
+
+.devis article, .listProduit article{
+    animation: center 1s linear 0s 1 normal forwards;
+}
+
+@keyframes center {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media screen and (min-width: 500px) {
+    .devis article {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .devis article img{
+        width: 100px;
+    }
+}
+

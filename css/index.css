@@ -1,0 +1,181 @@
+.index {
+    padding: 0;
+}
+
+.logo_index{
+    animation: BounceIn 1s ease 0s 1 normal forwards;
+}
+@keyframes BounceIn {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+
+section{
+    margin:  50px 0 50px 0;
+}
+
+.image_1, .image_2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 27vh;
+    overflow: hidden;
+}
+
+@media (max-width: 398px) {
+    .index section{
+        margin: 0;
+    }
+    .image_1, .bureau, .image_2{
+        border: none !important;
+    }
+
+}
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.image_1 .section-subtitle, .image_1 .hero-push-link, .image_2 .section-subtitle {
+    opacity: 0.2;
+    transition: opacity 0.8s ease-out;
+}
+
+.image_1:hover .section-subtitle,.image_1:hover .hero-push-link,.image_2:hover .section-subtitle {
+    opacity: 1;
+    transition: opacity 0.8s ease-out;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 800px) {
+    .discover-link {
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 600px) {
+    
+    .index{
+        padding-right:clamp(25px, 10vw, 130px) !important;
+        padding-left:clamp(25px, 10vw, 130px) !important;
+    }
+    .image_1, .bureau, .voiture, .image_2{
+        height: 40vw;
+        border-radius: 33px;
+        overflow: hidden;
+    }
+}
+.hero-push-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: clamp(30px, 7.5vw, 75px);
+    /* opacity: 0.2;
+    transition: opacity 0.8s ease-out; */
+}
+
+.hero-push-link img {
+    width: 30%;
+    pointer-events: none;
+    /*impossible de cliquer dessus*/
+}    
+
+.bureau>div{
+    position: relative;
+}
+
+.bureau>div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bureau .plan{
+    position: absolute;
+    /* width: 25%; */
+    right: 2.5%;
+    
+    transform: scale(0.18); 
+    transition: transform 0.3s;
+    transform-origin: 100% 50%;
+}
+
+.plan img{
+    object-fit: cover;
+    border-radius: 33px;
+}
+
+.bureau .plan:hover{
+    cursor: pointer;
+    transform: scale(0.65);
+    transition: transform 0.3s;
+}
+
+.image_2 .section-container{
+    position: relative;
+}
+
+.image_2 h2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
