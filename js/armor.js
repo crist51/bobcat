@@ -96,7 +96,7 @@ const armor = [
         },
         {
             _id: 4,
-            option: "Uzi",
+            name: "Uzi",
             option: [{ name: "lampe", price: 50 }, { name: "viseur", price: 200 }, { name: "lunette", price: 1000 },{name : "chargeur haute capacité", price: 2000},],
             imageUrl: "../images/porduct/camera_rotative/camera_1.jpg",
             altTxt: "revolver",

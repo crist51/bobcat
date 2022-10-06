@@ -291,8 +291,15 @@ form>div {
 
 
 /* ------------------------------------------------ ajout dans le dossier color---------------------- */
-.listeArmor {
-    border: double white 3px;
+
+.armor h2::before{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 15px;
+
 }
 .nav-armor li {
     background-color: white;
