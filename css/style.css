@@ -14,7 +14,7 @@ p, li, a {
     font-weight: normal;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -22,7 +22,7 @@ ol, ul {
     list-style-type: none;
 }
 
-.none{
+.none {
     display: none;
 }
 
@@ -67,7 +67,7 @@ ol, ul {
     border-radius: 33px;
 }
 
-.listProduit article img, .listProduit article{
+.listProduit article img, .listProduit article {
     width: 100%;
     height: 280px;
     object-fit: cover;
@@ -138,17 +138,17 @@ ol, ul {
 
 
 
-#btn{
+#btn {
     width: 50%;
     margin-bottom: 25px;
 }
 
-form>div{
+form>div {
     margin-bottom: 25px;
 }
 
-.form_div label{
-    text-decoration:underline
+.form_div label {
+    text-decoration: underline
 }
 
 
@@ -171,6 +171,7 @@ form>div{
     .form input {
         margin-top: 15px;
     }
+
     .bloc-1 .containerPrice span {
         display: block;
     }
@@ -186,15 +187,16 @@ form>div{
     align-items: center;
 }
 
-.devis .bloc_1{
+.devis .bloc_1 {
     flex-direction: column;
 }
-.devis .total{
+
+.devis .total {
     margin-bottom: 25px;
     padding: 25px;
 }
 
-.devis .total h2{
+.devis .total h2 {
     text-align: center;
     padding: 0;
     margin: 0;
@@ -204,20 +206,20 @@ form>div{
 
 
 
-.devis{
+.devis {
     flex-direction: column;
 }
 
-.devis h2{
+.devis h2 {
     text-align: center;
 }
 
-.cart__item, .devis section{
+.cart__item, .devis section {
     width: 100%;
     max-width: 500px;
 }
 
-.devis article img{
+.devis article img {
     width: 100%;
     height: 150px;
     object-fit: cover;
@@ -230,41 +232,41 @@ form>div{
 
 }
 
-.devis .cart__item__content{
+.devis .cart__item__content {
     padding: 10px;
 }
 
-.cart__item__content{
+.cart__item__content {
     width: 100%;
 }
 
-.item_info div{
+.item_info div {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.devis .deleteItem{
+.devis .deleteItem {
     margin-top: 20px;
     cursor: pointer;
 }
 
-.priceTotal, .totalEntretient{
+.priceTotal, .totalEntretient {
     font-weight: bolder;
 }
 
-.devis article, .listProduit article{
+.devis article, .listProduit article {
     animation: center 1s linear 0s 1 normal forwards;
 }
 
 @keyframes center {
-	0% {
-		transform: scale(0);
-	}
+    0% {
+        transform: scale(0);
+    }
 
-	100% {
-		transform: scale(1);
-	}
+    100% {
+        transform: scale(1);
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -274,8 +276,162 @@ form>div{
         align-items: center;
         justify-content: center;
     }
-    .devis article img{
+
+    .devis article img {
         width: 100px;
     }
 }
 
+
+
+
+
+
+
+
+
+/* ------------------------------------------------ ajout dans le dossier color---------------------- */
+.listeArmor {
+    border: double white 3px;
+}
+.nav-armor li {
+    background-color: white;
+    color: red;
+}
+.nav-armor li:hover {
+    background-color: red;
+    color: white;
+}
+.listeArmor article h3 {
+    color: transparent;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+.listeArmor article:hover h3 {
+    color: white;
+    background: rgba(0, 0, 0, 0.750);
+    border: 2px solid white;
+    transition: background-color 0.5s;
+}
+
+.arme .bloc_2>div, .list{
+    background-color: white;
+    color: black;
+}
+
+/* ------------------------------------------------ ajout dans le dossier style---------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.listeArmor {
+    margin: 30px;
+    padding: 15px;
+}
+
+.nav-armor ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.nav-armor li {
+    margin-top: 25px;
+    text-align: center;
+    padding: 7px 15px;
+    border-radius: 33px;
+    width: 235px;
+}
+
+.nav-armor li:hover {
+    margin-top: 25px;
+    text-align: center;
+    padding: 7px 15px;
+}
+
+.listeArmor .containairArme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.listeArmor article {
+    animation: center 1s linear 0s 1 normal forwards;
+}
+
+.listeArmor h2, .produit h2, .arme h2 {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.listeArmor article {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.listeArmor article img, .listeArmor article, .listeArmor article h3 {
+    border-radius: 33px;
+}
+
+.listeArmor article img, .listeArmor article {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.listeArmor article h3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+    .listeArmor article img, .listeArmor article {
+        width: 250px;
+    }
+}
+
+
+
+.arme section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list>div, .arme .bloc_2>div{
+    margin-bottom: 15px;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+}
+.list>div div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.arme .bloc_2{
+    text-align: center;
+    margin-bottom: 25px;
+
+}

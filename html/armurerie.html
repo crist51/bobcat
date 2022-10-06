@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/color.css" />
     <link rel="stylesheet" href="../css/headerFooter.css" />
-    <title>bobcat - produits</title>
+    <title>bobcat - armurerie</title>
   </head>
 
   <body class="root">
@@ -28,10 +28,10 @@
                 <a href="../index.html"><i class="fas fa-home"></i><span>Accueil</span></a>
             </li>
             <li>
-                <a href=""><i class="fas fa-archive"></i><span>Liste des produits</span></a>
+                <a href="./listeProduits.html"><i class="fas fa-archive"></i><span>Liste des produits</span></a>
             </li>
             <li>
-              <a href="./armurerie.html"></i><span>Armurerie</span></a>
+              <a href="./armurerie.html"><span>Armurerie</span></a>
             </li>
             <li class="devisNav">
               <a href='./devis.html' title='len vers devis'><i class='fas fa-credit-card'></i><span>Devis</span></a>
@@ -48,14 +48,53 @@
       </div>
     </header>
 
-    <main class="listeProduits main">
-      <div class="main">
-        <section class="listProduit">
-          <h2>
-            On vous propose un maximum de matériels, pour un maximum de garent.
+    <main class="armor main">
+        <div class="nav-armor">
+            <ul>
+                <a href="#arme_blanche"><li>Armes blanches</li></a>
+                <a href="#arme_de_poingt"><li>Armes de points</li></a>
+                <a href="#mitrailette_legere"><li>Mitraillettes legere</li></a>
+                <a href="#fusilsAssaut"><li>Fusils d'assaut</li></a>
+                <a href="#fusilPrecision"><li>Fusils à lunette</li></a>
+            </ul>
+        </div>
+      <div class="main listeArmor">
+
+        <section>
+          <h2 id="arme_blanche">
+            Armes blanches.
           </h2>
-          <div class="bloc_1"></div>
+          <div class="bloc_1 containairArme"></div>
         </section>
+
+        <section>
+          <h2 id="arme_de_poingt">
+            Armes de points.
+          </h2>
+          <div class="bloc_2 containairArme" ></div>
+        </section>
+
+        <section>
+          <h2 id="mitrailette_legere">
+            Arme Mitraillettes legere.
+          </h2>
+          <div class="bloc_3 containairArme"></div>
+        </section>
+
+        <section>
+          <h2 id="fusilsAssaut">
+            Fusils d'assaut.
+          </h2>
+          <div class="bloc_4 containairArme" ></div>
+        </section>
+
+        <section>
+          <h2 id="fusilPrecision">
+            Fusils a lunette.
+          </h2>
+          <div class="bloc_5 containairArme"></div>
+        </section>
+
       </div>
     </main>
 

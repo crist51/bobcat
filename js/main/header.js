@@ -4,9 +4,11 @@ const header = document.querySelector(".header")
 const devis = document.querySelector(".devis")
 const listeProduits = document.querySelector(".listeProduits")
 const produit = document.querySelector(".produit")
+const listeArmor = document.querySelector(".listeArmor")
+const arme = document.querySelector(".arme")
 
 if (header) {
-    console.log("constructHeader");
+    //console.log("constructHeader");
     constructHeader()
 }
 
@@ -36,7 +38,7 @@ function constructHeader() {
         logoPrincipale.alt = ("logo entreprise");
         logo.appendChild(logoPrincipale);
     }
-    else if (devis || listeProduits || produit) {
+    else if (devis || listeProduits || produit|| listeArmor || arme) {
         //sous dossier
         const logoSmall = document.querySelector(".logoSmall");
         const logoImg = document.createElement("img");
@@ -52,13 +54,6 @@ function constructHeader() {
     } else {
         console.log("pas de page prévus");
     }
-
-
-
-
-
-
-
 
     const nav = document.querySelector(".nav");
     var li = document.createElement("li");
